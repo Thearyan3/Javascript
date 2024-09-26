@@ -73,19 +73,21 @@
 
 // DOM Manipulation
 
-function sum(){
-    console.log(Number(first.value) + Number(Second.value));
-}
+// function sum(){
+//     console.log(Number(first.value) + Number(Second.value));
+// }
 
-function minus(){
-    console.log(Number(first.value) - Number(Second.value));
-}
+// function minus(){
+//     console.log(Number(first.value) - Number(Second.value));
+// }
 
-function multiply(){
-    console.log(Number(first.value) * Number(Second.value));
-}
+// function multiply(){
+//     console.log(Number(first.value) * Number(Second.value));
+// }
 
-function Divide(){
-    console.log(Number(first.value) / Number(Second.value));
-}
+// function Divide(){
+//     console.log(Number(first.value) / Number(Second.value));
+// }
+
+
 
