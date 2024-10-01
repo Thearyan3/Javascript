@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="width: 300px; margin: 100px auto;">
+        <h1>calculator 3</h1>
+    <input type="text" name="" id="inp"><br>
+    <button onclick="getVal(this)">1</button><button onclick="getVal(this)">2</button><button onclick="getVal(this)">3</button><button onclick="getVal(this)">4</button><br>
+    <button onclick="getVal(this)">+</button><button onclick="getVal(this)">-</button><button onclick="getVal(this)">*</button><button onclick="getVal(this)">%</button><br>
+    <button onclick="calculate()">=</button><button onclick="DelVal()">C</button><button onclick="Back()">Back</button>
+</div>
+</body>
+<script>
+    let inp = document.getElementById("inp");
+
+    function getVal(btn){
+            console.log(btn.textContent);
+             inp.value += btn.textContent;
+    }
+
+    function calculate(){
+        let result = eval(inp.value);
+        inp.value = result;
+    }
+
+    function DelVal(){
+        inp.value = "";
+    }
+
+    function Back(){
+        inp.value = inp.value.slice(0, -1);
+    }
+</script>
+</html>
