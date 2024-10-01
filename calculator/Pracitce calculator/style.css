@@ -1,7 +1,48 @@
-.text-center{
-    text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
+
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: "Ubuntu Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
 }
 
-.bg-red{
-    background-color: red;
+.text-center{
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.mx-auto{
+    margin: auto;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button{
+    padding: 20px;
+    margin: 0 3px;
+    border: 2px solid black;
+    border-radius: 19px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.row{
+    margin: 8px 0;
+}
+
+.row input{
+    padding: 10px 0px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 19px;
 }
