@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>calculator 1</h1>
+
+    <input type="text" name="" id="first">
+    <input type="text" name="" id="second"><br>
+
+    <button onclick="sum()">sum</button>
+    <button onclick="minus()">minus</button>
+    <h1 id="result">result</h1>
+
+    <!-- <div id="box"></div> -->
+</body>
+<style>
+    /* #box{
+        width: 30%;
+        height: 200px;
+        background-color: red;
+    } */
+</style>
+<script>
+    // function cal(){
+        let first = document.getElementById("first");
+        let second = document.getElementById("second");
+        let result = document.getElementById("result");
+    
+    // }
+
+    function sum(){
+            let firstVal = first.value;
+            let secondVal = second.value;
+
+            let calculate = Number(firstVal) + Number(secondVal);
+
+            result.textContent = calculate;
+    }
+
+    function minus(){
+        let firstVal = first.value;
+            let secondVal = second.value;
+
+            let calculate = Number(firstVal) - Number(secondVal);
+
+            result.textContent = calculate;
+    }
+
+
+
+
+
+    // let box = document.querySelector("#box");
+    // let h1 = document.createElement("h1");
+    // h1.textContent = "Hello World";
+
+    // let file = document.createElement("input");
+    // file.type = "file";
+    // box.appendChild(file);
+
+    // document.body.appendChild(h1);
+</script>
+</html>
